@@ -1,0 +1,16 @@
+topic_number: 1
+topic_slug: api-styles-mcp-a2a
+date_started: 2026-05-17
+
+topic_name: "API Styles in the Agent Era: REST, MCP, A2A"
+short_description: "Where MCP and A2A fit in the long history of API styles, and why the agent era needs new patterns"
+
+# The headline concept this deck makes the case for. Gets purple in the design.
+headline_concept: "MCP"
+
+# Decided during /finish-topic from 3 angles proposed by angle-finder.
+angle: "Build-in-public: mapping where MCP and A2A sit in the 30-year arc of API styles, and how that map changed the GenAIPros agent-layer design. MCP for LLM-to-tool, A2A for agent-to-agent, and the two compose. The A2A question arrives the moment GenAIPros has an ingestion agent and a summarization agent handing work across a task lifecycle longer than a tool-call timeout."
+
+slide_count: 18
+
+status: done

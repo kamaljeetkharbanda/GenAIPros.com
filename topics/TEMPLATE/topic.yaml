@@ -1,0 +1,19 @@
+topic_number: 0
+topic_slug: ""
+date_started: ""
+
+topic_name: ""
+short_description: ""
+
+# The headline-concept color (purple is reserved for this in design-config)
+# Examples: "MCP", "A2A", "RAG", "LangGraph", "vLLM"
+headline_concept: ""
+
+# The angle for the post. Decided after notes are written. Pick from 3 angles
+# proposed by angle-finder during /finish-topic.
+angle: ""
+
+# Deck slide count. 15-20 typical for deep teaching deck.
+slide_count: 18
+
+status: in_progress

@@ -1,0 +1,55 @@
+{
+  "_comment": "Project-shared settings.",
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/build.js *)",
+      "Bash(NODE_PATH=* node scripts/build.js *)",
+      "Bash(bash scripts/qa-render.sh*)",
+      "Bash(soffice *)",
+      "Bash(pdftoppm *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(grep *)",
+      "Bash(wc *)",
+      "Bash(mkdir -p *)",
+      "Bash(date *)",
+      "Bash(cp -r topics/TEMPLATE *)",
+      "Bash(cp *)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Read(./brand/**)",
+      "Read(./topics/**)",
+      "Read(./scripts/**)",
+      "Read(./output/**)",
+      "Write(./topics/**)",
+      "Write(./output/**)",
+      "Edit(./topics/**)",
+      "Edit(./brand/design-config.json)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.sh\"" }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "if": "Bash(*build.js*)", "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/pre-build-validate.sh\"" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/stop-suggest-next.sh\"" }
+        ]
+      }
+    ]
+  }
+}

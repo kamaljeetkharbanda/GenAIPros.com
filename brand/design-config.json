@@ -1,0 +1,81 @@
+{
+  "_comment": "GenAIPros design system. Hex without leading #. Slate + sky/teal/amber/purple.",
+  "brandName": "AIMLEngineers.com",
+  "deckSeries": "Building GenAIPros.com",
+  "website": "aimlengineers.com",
+  "projectWebsite": "genaipros.com",
+
+  "author": {
+    "name": "Kamaljeet S Kharbanda",
+    "title": "AI Advisor & Instructor @ AIMLEngineers.com",
+    "tagline": "Building GenAIPros"
+  },
+
+  "colorPalette": {
+    "_comment": "Slate-based design system. Reserve purple for the headline concept being introduced.",
+    "slate900": "0F172A",
+    "slate700": "334155",
+    "slate600": "475569",
+    "slate400": "94A3B8",
+    "slate200": "E2E8F0",
+    "slate50":  "F8FAFC",
+    "white":    "FFFFFF",
+
+    "sky":       "0284C7",
+    "skyBright": "0EA5E9",
+    "skySoft":   "E0F2FE",
+
+    "teal":     "0D9488",
+    "tealSoft": "CCFBF1",
+
+    "amber":     "D97706",
+    "amberSoft": "FEF3C7",
+
+    "purple":     "7C3AED",
+    "purpleSoft": "F3E8FF"
+  },
+
+  "typography": {
+    "headerFont": "Calibri",
+    "bodyFont": "Calibri",
+    "monoFont": "Courier New",
+    "signatureFont": "Georgia",
+    "sizes": {
+      "titleSlide": 60,
+      "titleEyebrow": 14,
+      "titleSubtitle": 22,
+      "slideTitle": 32,
+      "slideSubtitle": 15,
+      "cardHeader": 16,
+      "body": 14,
+      "caption": 11,
+      "footer": 10,
+      "footerName": 11,
+      "insightBand": 14
+    }
+  },
+
+  "layout": {
+    "_comment": "LAYOUT_WIDE — 13.333 x 7.5 inches. Footer reserved y=7.0-7.4.",
+    "slideWidth": 13.333,
+    "slideHeight": 7.5,
+    "marginLeft": 0.55,
+    "marginRight": 0.55,
+    "marginTop": 0.55,
+    "contentTop": 1.85,
+    "contentBottom": 6.85,
+    "footerTop": 7.0,
+    "cardRadius": 0.08,
+    "iconDiscSmall": 0.5,
+    "iconDiscLarge": 0.85,
+    "topBorderHeight": 0.10,
+    "gridGap": 0.22
+  },
+
+  "footer": {
+    "_comment": "Author footer on every content slide.",
+    "showOnContentSlides": true,
+    "showOnDarkSlides": true,
+    "pageNumberFormat": "{n} / {total}"
+  }
+}
